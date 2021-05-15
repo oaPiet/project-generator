@@ -71,7 +71,7 @@ docker-compose -f docker-compose.yml up -d
 
 ![image](https://user-images.githubusercontent.com/7121937/118346388-a05cdd00-b500-11eb-91bf-06f01e4ebcf8.png)
 
-- When you get **host** and **port** put inside this files:
+- When you get **host** and **port** put inside these files:
 
 _**k8s/dev/externalName/mariadb-service.yml**_
 
