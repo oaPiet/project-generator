@@ -69,17 +69,17 @@ docker-compose -f docker-compose.yml up -d
 ./ngrok tcp 3307 
 ```
 
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/7121937/118346388-a05cdd00-b500-11eb-91bf-06f01e4ebcf8.png)
 
 - When you get **host** and **port** put inside this files:
 
 _**k8s/dev/externalName/mariadb-service.yml**_
 
-![img_2.png](img_2.png)
+![image](https://user-images.githubusercontent.com/7121937/118346396-ace13580-b500-11eb-98e4-737ddce3ce7b.png)
 
 _**k8s/dev/config-map.yml**_
 
-![img_3.png](img_3.png)
+![image](https://user-images.githubusercontent.com/7121937/118346402-b7033400-b500-11eb-9987-a7898a0f18b3.png)
 
 [comment]: <> (- Then execute this command to get the ip from the database container: )
 
@@ -103,7 +103,7 @@ _**k8s/dev/config-map.yml**_
 minikube service project-generator -n project-generator-ns
 ```
 
-![img_4.png](img_4.png)
+![image](https://user-images.githubusercontent.com/7121937/118346408-bd91ab80-b500-11eb-8197-f5df019facc9.png)
 
 - With the previous information, test the API:   
 
@@ -111,5 +111,5 @@ http://HOST:PORT/api/v1/user/create
 
 **Example:** 
 
-![img_5.png](img_5.png)
+![image](https://user-images.githubusercontent.com/7121937/118346427-d26e3f00-b500-11eb-8761-d6edfa1f35be.png)
 
