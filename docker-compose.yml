@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: project-generator-db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: project_generator_dev
+      MYSQL_USER: pguser
+      MYSQL_PASSWORD: pguser
+    volumes:
+      - ./db/config:/etc/mysql/conf.d
+      - db-data:/var/lib/mysql
+    restart: unless-stopped
+    ports:
+      - 3307:3306
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: "bridge"
+volumes:
+  db-data:

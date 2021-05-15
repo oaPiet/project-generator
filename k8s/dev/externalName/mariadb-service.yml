@@ -1,0 +1,11 @@
+---
+kind: "Service"
+apiVersion: "v1"
+metadata:
+  name: external-mariadb-service
+  namespace: project-generator-ns
+spec:
+  type: ExternalName
+  externalName: 6.tcp.ngrok.io
+
+

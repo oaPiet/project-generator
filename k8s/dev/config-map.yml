@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mariadb-config
+  namespace: project-generator-ns
+  labels:
+    app: mariadb
+data:
+  DATABASE_HOST: external-mariadb-service
+  DATABASE_NAME: project_generator_dev
+  DATABASE_PORT: "14187"
