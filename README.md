@@ -110,5 +110,6 @@ minikube service project-generator -n project-generator-ns
 http://HOST:PORT/api/v1/user/create
 
 **Example:** 
+
 ![img_5.png](img_5.png)
 
