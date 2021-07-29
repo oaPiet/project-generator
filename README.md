@@ -58,7 +58,10 @@ If you want to learn more about building native executables, please consult http
 eval $(minikube -p minikube docker-env)
 ```
 
-- Create a local database: 
+- Create a local database:
+
+### For the next step I recommend using a database in the cloud (Digital Ocean, GCP, AWS) or a stateful application, since ngrok has complications with the TCP protocol and you may have a timeout.
+
 ```shell script
 docker-compose -f docker-compose.yml up -d
 ```
